@@ -4,7 +4,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && rollup -c"
+    "build": "rimraf dist && rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "lit": "^3.1.1"
@@ -14,7 +16,15 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
+    "@storybook/addon-essentials": "^7.6.10",
+    "@storybook/addon-links": "^7.6.10",
+    "@storybook/blocks": "^7.6.10",
+    "@storybook/web-components": "^7.6.10",
+    "@storybook/web-components-vite": "^7.6.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^4.9.5",
+    "storybook": "^7.6.10",
     "typescript": "^5.3.3"
   }
 }
