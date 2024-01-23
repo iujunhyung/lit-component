@@ -1,5 +1,4 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": false,
@@ -7,14 +6,13 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "experimentalDecorators": true,
-    "outDir": "./dist/",
 
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false,
+    "noEmit": true,
     "jsx": "react-jsx",
 
     /* Linting */
@@ -22,8 +20,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-
-    "composite": true,
     "allowSyntheticDefaultImports": true
   }
 }
