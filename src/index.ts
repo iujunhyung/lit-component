@@ -10,7 +10,7 @@ export class LitComponent extends LitElement {
   render() {
     return html`
       <div class="button" @click=${() => console.log("hello")}>
-        ${this.display} Bye!sds
+        ${this.display} Bye!
       </div>
     `;
   }
